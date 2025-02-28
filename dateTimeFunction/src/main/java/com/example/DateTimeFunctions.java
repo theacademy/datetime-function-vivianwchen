@@ -62,7 +62,14 @@ public class DateTimeFunctions {
 	 */
 	public static String getTimeDifference(LocalDate date1, LocalDate date2) {
 		//YOUR CODE STARTS HERE
-		return null;
+
+		Period diff = date1.between(date2);
+
+		String formatted = String.format("Year-%d:Months-%d:Days-%d",
+				diff.getYears,
+				diff.getMonths(),
+				diff.getDays());
+		return formatted;
 		//YOUR CODE ENDS HERE
 
 	}
