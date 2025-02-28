@@ -36,7 +36,7 @@ public class DateTimeFunctions {
 	public static LocalDate getLaterDatebyDays(LocalDate date, int x) {
 		//YOUR CODE STARTS HERE
 
-		return LocalDate.now().plusDays(x);
+		return date.plusDays(x);
 
 		//YOUR CODE ENDS HERE
 
@@ -49,7 +49,7 @@ public class DateTimeFunctions {
 	public static LocalDate getPreviousDatebyWeeks(LocalDate date, int x) {
 		//YOUR CODE STARTS HERE
 
-		return LocalDate.now().minusDays(x * 7);
+		return date.minusDays(x * 7);
 
 		//YOUR CODE ENDS HERE
 
@@ -65,10 +65,11 @@ public class DateTimeFunctions {
 
 		Period diff = Period.between(date1, date2);
 
-		String formatted = String.format("Year-%d:Months-%d:Days-%d",
+		String formatted = String.format("Years-%d:Months-%d:Days-%d",
 				diff.getYears(),
 				diff.getMonths(),
 				diff.getDays());
+
 		return formatted;
 
 		//YOUR CODE ENDS HERE
