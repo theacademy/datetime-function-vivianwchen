@@ -33,7 +33,7 @@ public class DateTimeFunctions {
 	 */
 	public static LocalDate getLaterDatebyDays(LocalDate date, int x) {
 		//YOUR CODE STARTS HERE
-		return null;
+		return LocalDate.now().plusDays(x);
 		//YOUR CODE ENDS HERE
 
 	}
