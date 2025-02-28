@@ -64,7 +64,6 @@ public class DateTimeFunctions {
 		//YOUR CODE STARTS HERE
 
 		Period diff = Period.between(date1, date2);
-
 		String formatted = String.format("Years-%d:Months-%d:Days-%d",
 				diff.getYears(),
 				diff.getMonths(),
